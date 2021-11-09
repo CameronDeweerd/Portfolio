@@ -1,0 +1,177 @@
+
+{% extends "portfolio_layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <section class="section">
+        <div class="container" id="aboutMe">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nulla veritatis rerum voluptatum
+                        maxime nam esse corrupti suscipit ex perferendis commodi incidunt pariatur tempora magni
+                        quisquam maiores, aperiam obcaecati id!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h1>Projects</h1>
+        <div class="container projects">
+            <div class="card projects">
+                <div class="card-body">
+                    <h5 class="card-title">Barbell Optimizer</h5>
+                    <div class="project-box">
+                        <div class="project-image">
+                            <img src="static/weightCalc.jpg" width="100%">
+                        </div>
+                        <div class="project-text">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <form action="/weight" ><button class="card-link">Try it out</button></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card projects">
+                <div class="card-body">
+                    <h5 class="card-title">Marketboard Profit Finder</h5>
+                    <div class=" project-box">
+                        <div class="project-image">
+                            <img src="static/FFXIV Market.jpg" width="100%">
+                        </div>
+                        <div class="project-text">
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <form action="https://github.com/CameronDeweerd/FFXIV-Market-Calculator" ><button class="card-link">Check out the Code</button></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card projects">
+                <div class="card-body">
+                    <h5 class="card-title">Issue Tracker</h5>
+                    <div class="project-box">
+                        <div class="project-image">
+                            <img src="static/IssueTrackerDashboard.jpg" width="100%">
+                        </div>
+                        <div class="project-text">
+                            <p class="card-text">This was created as a two person collaboration to practice the use of Git and This project was created using Flask and SQLite database. </p>
+                            <form action="/issue"><button href="/issue" class="card-link">Try it out</button></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="coding">
+        <h1>Coding Challenges</h1>
+        <div class="container" id="CodingChallenges">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sudoku Solver</h5>
+                    <p class="card-text"> Developed an algorithm to solve sudoku puzzles. Incorporates both
+                        basic
+                        sudoku logic and backtracking. </p>
+                    <button href="#" class="card-link">Check it out</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the
+                        bulk of
+                        the card's content.</p>
+                    <button href="#" class="card-link">Check it out</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the
+                        bulk of
+                        the card's content.</p>
+                    <button href="#" class="card-link">Check it out</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the
+                        bulk of
+                        the card's content.</p>
+                    <button href="#" class="card-link">Check it out</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the
+                        bulk of
+                        the card's content.</p>
+                    <button href="#" class="card-link">Check it out</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the
+                        bulk of
+                        the card's content.</p>
+                    <button href="#" class="card-link">Check it out</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <h1>Contact Me</h1>
+    <div class="container" id="ContactMe">
+        <form class="col-5">
+            <div class="form-group">
+                <label for="contact-name">* Name</label>
+                <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="contact-org">Organization/Company</label>
+                <input type="text" class="form-control" id="contact-org" placeholder="Oraganization/Company">
+            </div>
+            <div class="form-group">
+                <label for="contact-email">* Email</label>
+                <input type="email" class="form-control" id="contact-email" placeholder="Your E-mail">
+            </div>
+            <div class="form-group">
+                <label for="contact-message">* Message</label>
+                <textarea class="form-control" id="contact-message" rows="4"
+                    placeholder="Type your Message Here"></textarea>
+            </div>
+            <button type="submit" class="button">Submit</button>
+        </form>
+
+        <div class="col-5">
+            <img src="static/headshot_1.jpg" width="100%">
+            <p>Email: cameron.deweerd@gmail.com</p>
+            <p>Phone: 905-730-9493</p>
+            <p><a href="www.linkedin.com/in/cameron-deweerd-2435306a/">LinkedIn</a> </p>
+            <p><a href="github.com/CameronDeweerd">GitHub</a></p>
+        </div>
+
+    </div>
+
+{% endblock %}

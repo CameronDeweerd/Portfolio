@@ -1,0 +1,39 @@
+{% extends "portfolio_layout.html" %}
+
+{% block title %}
+    Weight Calculator
+{% endblock %}
+
+{% block main %}
+<h1>Best Weights</h1>
+<section class="section">
+    <div> Select the weight each person wants to lift.</div>
+    <div> They will be split into groups to minimize the number of weights that need to be added/removed from the bar.</div>
+    <div class="container" style="border: none;">
+        <div class="card" id="weightInput">
+            <h2>Targets</h2><hr>
+            <form id='weights' action="/weight" method="POST">
+                {% for i in range(9) %}
+                <div><label for="Person{{i+1}}">Person {{i+1}}:</label>
+                <input type="number" id="Person{{i+1}}" name="Person{{i+1}}" min="50" max="320" step="5" value=""></div>
+                {% endfor %}
+                <button class="btn btn-primary" type="submit">Best Weights</button>
+            </form>
+        </div>
+
+        <div class="card" id="weightOutput">
+            <h2>Results</h2><hr>
+            {% if final_group %}
+            <div>The best combination is:</div>
+            <div> {{final_group[0]}} with {{final_group[1]}} swaps total</div>
+            <hr>
+            {% for group in final_group[0] %}
+            <div>{{group}} -> {{final_options[group][0]}}</div>
+            <div> needs {{final_options[group][1]}} swaps</div>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+    </div>
+</section>
+{% endblock %}
