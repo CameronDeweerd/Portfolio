@@ -5,13 +5,15 @@
 {% endblock %}
 
 {% block main %}
-<h1>Best Weights</h1>
+<h1>Barbell Calculator</h1>
 <section class="section">
+    <div>A calculator to save time at the Gym by splitting people into groups that minimize the number of barbells that need to be changed.</div>
+    <br>
     <div> Select the weight each person wants to lift.</div>
     <div> They will be split into groups to minimize the number of weights that need to be added/removed from the bar.</div>
     <div class="container" style="border: none;">
         <div class="card" id="weightInput">
-            <h2>Targets</h2><hr>
+            <h2 class="card-title">Targets</h2><hr>
             <form id='weights' action="/weight" method="POST">
                 {% for i in range(9) %}
                 <div><label for="Person{{i+1}}">Person {{i+1}}:</label>
@@ -22,7 +24,7 @@
         </div>
 
         <div class="card" id="weightOutput">
-            <h2>Results</h2><hr>
+            <h2 class="card-title">Results</h2><hr>
             {% if final_group %}
             <div>The best combination is:</div>
             <div> {{final_group[0]}} with {{final_group[1]}} swaps total</div>

@@ -49,6 +49,8 @@ background-color: var(--color-7);
 body { 
     padding:75px 25px;
     background: var(--color-1);
+    background-opacity: 0.5;
+    background-image: url("/static/slate.jpg");
     color: var(--color-font);
 }
 
@@ -60,9 +62,13 @@ section {
     width: 100%;
     height: 90%;
     margin: 0 auto;
-    border: 5px solid var(--color-2);
+
     display: flex;
     justify-content: space-evenly;
+
+}
+
+.reverse {
     flex-wrap: wrap-reverse;
 }
 
@@ -74,17 +80,16 @@ section {
     border: 1px solid var(--color-1);
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
 }
 
 h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.6em;
-    text-transform: uppercase;
-    font-size:1.5em;
+    font-size:2em;
     display: block;
     text-align: center;
+    text-decoration: underline;
 }
 
 p {
@@ -126,8 +131,10 @@ p {
   .card-title {
       text-transform: uppercase;
       text-align: center;
-      font-size: 1.4em;
-      border-bottom: 1px solid var(--color-1);
+      font-size: 1em;
+      margin: 0 0;
+      text-decoration: underline;
+      font-weight: bold;
   }
 
   .card-text {
@@ -135,18 +142,41 @@ p {
       font-size: 0.8em;
   }
 
+    .card-list {
+      margin: 0 0;
+      list-style-type: none;
+      padding: 0;
+      font-size: 0.8em;
+  }
+
   button{
       background-color: var(--color-6);
+      margin: 1em 0;
   }
 
   hr {
       margin: 1px;
   }
 
-
+  .inner-box {
+    padding:0.5rem
+  }
 
   #weightOutput{
     flex: 20 0 200px;
     min-height:100%;
     align-self: auto;
   }
+
+.form{
+    vertical-align:center;
+}
+
+.form-group{
+    text-align: left;
+}
+
+.about-text{
+    text-align:justify;
+    padding:0.4em;
+}

@@ -6,34 +6,46 @@
 {% endblock %}
 
 {% block main %}
+    <div class="transbox">
+    <h1>Cameron Deweerd</h1>
     <section class="section">
         <div class="container" id="aboutMe">
-            <div class="row">
-
-                <div class="col-md-6">
-                    <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nulla veritatis rerum voluptatum
-                        maxime nam esse corrupti suscipit ex perferendis commodi incidunt pariatur tempora magni
-                        quisquam maiores, aperiam obcaecati id!</p>
+                <div class="card" style="text-align:justify;">
+                    <h2 class="card-title">About Me</h2>
+                    <div>
+                        <p class="about-text">My name is Cameron, and I’m a chemical engineer based in Kitchener Ontario looking to transition into Software Engineering.</p>
+                        <p class="about-text">I've worked in a few different automotive manufacturing environments where I discovered
+                            that my favourite projects were those where I solved problems using code.  </p>
+                        <p class="about-text">I've got a love for data and optimization and enjoy the feeling
+                            of accomplishment when finding and fixing that bug in your code.  </p>
+                        <p class="about-text">My current focus has been on Full Stack web development though I am also interested in data anlytics and testing.   </p>
+                    </div>
                 </div>
-            </div>
+                <div class="card col-3">
+                    <img src="static/headshot_1.jpg">
+                </div>
         </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section inner-box" id="projects">
         <h1>Projects</h1>
-        <div class="container projects">
+        <div class="container reverse projects">
             <div class="card projects">
                 <div class="card-body">
                     <h5 class="card-title">Barbell Optimizer</h5>
                     <div class="project-box">
                         <div class="project-image">
-                            <img src="static/weightCalc.jpg" width="100%">
+                            <img src="static/weightCalc.JPG" width="100%">
                         </div>
                         <div class="project-text">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <form action="/weight" ><button class="card-link">Try it out</button></form>
+                            <p class="card-text">A calculator to save time at the Gym by splitting people into groups that minimize the number of barbells that need to be changed</p>
+                            <p class="card-title">Skills Showcased</p>
+                            <ul>
+                                <li class="card-list">Algorithmic problem solving</li>
+                                <li class="card-list">Using code for practical solutions</li>
+                            </ul>
+                            <form style="display: inline-block;" action="/weight" ><button class="card-link">Try it out</button></form>
+                            <form style="display: inline-block;" action="https://github.com/CameronDeweerd/weight-calculator" ><button class="card-link">View Code</button></form>
                         </div>
                     </div>
                 </div>
@@ -44,13 +56,17 @@
                     <h5 class="card-title">Marketboard Profit Finder</h5>
                     <div class=" project-box">
                         <div class="project-image">
-                            <img src="static/FFXIV Market.jpg" width="100%">
+                            <img src="static/FFXIV Market.JPG" width="100%">
                         </div>
                         <div class="project-text">
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk
-                                of the card's content.</p>
-                            <form action="https://github.com/CameronDeweerd/FFXIV-Market-Calculator" ><button class="card-link">Check out the Code</button></form>
+                            <p class="card-text">This FFXIV Market Calculator helps you identify which items are profitable to purchase components for and to craft</p>
+                            <p class="card-title">Skills Showcased</p>
+                            <ul>
+                                <li class="card-list">Integrating w/ 3rd party API</li>
+                                <li class="card-list">SQL database create/read/update</li>
+                                <li class="card-list">Using code for practical solutions</li>
+                            </ul>
+                            <form action="https://github.com/CameronDeweerd/FFXIV-Market-Calculator" ><button class="card-link">View Code</button></form>
                         </div>
                     </div>
                 </div>
@@ -62,11 +78,28 @@
                     <h5 class="card-title">Issue Tracker</h5>
                     <div class="project-box">
                         <div class="project-image">
-                            <img src="static/IssueTrackerDashboard.jpg" width="100%">
+                            <img src="static/IssueTrackerDashboard.JPG" width="100%">
                         </div>
                         <div class="project-text">
-                            <p class="card-text">This was created as a two person collaboration to practice the use of Git and This project was created using Flask and SQLite database. </p>
-                            <form action="/issue"><button href="/issue" class="card-link">Try it out</button></form>
+                            <p class="card-text">This project allows a team of people to submit, track, and manage bugs.</p>
+                            <ul>
+                                <li class="card-list">Includes a dashboard for tracking Key Performance Indicators</li>
+                                <li class="card-list">Different levels of functionality for Admins, Managers, Devs, and Submitters</li>
+                                <li class="card-list">Ability to assign tickets to specific users</li>
+                                <li class="card-list">Update activities for tickets and change their status</li>
+                                <li class="card-list">Pull up an individual ticket and view its detailed history</li>
+                            </ul>
+                            <p class="card-text">Created in collaboration w/ <a href="https://github.com/tsennema">TSennema</a> to practice our use of Git and working in a team environment.</p>
+                            <p class="card-title">Skills Showcased</p>
+                            <ul>
+                                <li class="card-list">HTML/CSS/Javascript Frontend Development</li>
+                                <li class="card-list">Flask(Python) Backend Development</li>
+                                <li class="card-list">SQL database create/read/update</li>
+                                <li class="card-list">Git commit/push/merge </li>
+                                <li class="card-list">Using code for practical solutions</li>
+                            </ul>
+                            <form style="display: inline-block;" action="/issue"><button href="/issue" class="card-link">Try it out</button></form>
+                            <form style="display: inline-block;" action="https://github.com/CameronDeweerd/IssueTracker" ><button class="card-link">View Code</button></form>
                         </div>
                     </div>
                 </div>
@@ -75,103 +108,98 @@
     </section>
 
     <section class="section" id="coding">
-        <h1>Coding Challenges</h1>
-        <div class="container" id="CodingChallenges">
+        <h1>Additional Projects</h1>
+        <div class="container reverse inner-box" id="CodingChallenges">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Sudoku Solver</h5>
                     <p class="card-text"> Developed an algorithm to solve sudoku puzzles. Incorporates both
-                        basic
-                        sudoku logic and backtracking. </p>
-                    <button href="#" class="card-link">Check it out</button>
+                        basic sudoku logic and backtracking. </p>
+                    <form action="https://github.com/CameronDeweerd/sudoku-solver-backtracking" ><button class="card-link">View Code</button></form>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the
-                        bulk of
-                        the card's content.</p>
-                    <button href="#" class="card-link">Check it out</button>
+                    <h5 class="card-title">Freecell</h5>
+                    <p class="card-text">A GUI for playing the card game Freecell</p>
+                    <form action="https://github.com/CameronDeweerd/freecell" ><button class="card-link">View Code</button></form>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the
-                        bulk of
-                        the card's content.</p>
-                    <button href="#" class="card-link">Check it out</button>
+                    <h5 class="card-title">Portfolio Website</h5>
+                    <p class="card-text">Created the website you are viewing right now using CSS and HTML.</p>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the
-                        bulk of
-                        the card's content.</p>
-                    <button href="#" class="card-link">Check it out</button>
-                </div>
-            </div>
+<!--            <div class="card" style="width: 18rem;">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title</h5>-->
+<!--                    <p class="card-text">Some quick example text to build on the card title and make up the-->
+<!--                        bulk of-->
+<!--                        the card's content.</p>-->
+<!--                    <button href="#" class="card-link">Check it out</button>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the
-                        bulk of
-                        the card's content.</p>
-                    <button href="#" class="card-link">Check it out</button>
-                </div>
-            </div>
+<!--            <div class="card" style="width: 18rem;">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title</h5>-->
+<!--                    <p class="card-text">Some quick example text to build on the card title and make up the-->
+<!--                        bulk of-->
+<!--                        the card's content.</p>-->
+<!--                    <button href="#" class="card-link">Check it out</button>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the
-                        bulk of
-                        the card's content.</p>
-                    <button href="#" class="card-link">Check it out</button>
-                </div>
-            </div>
+<!--            <div class="card" style="width: 18rem;">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title</h5>-->
+<!--                    <p class="card-text">Some quick example text to build on the card title and make up the-->
+<!--                        bulk of the card's content.</p>-->
+<!--                    <button href="#" class="card-link">Check it out</button>-->
+<!--                </div>-->
+<!--            </div>-->
 
         </div>
     </section>
 
-
+    <section>
     <h1>Contact Me</h1>
-    <div class="container" id="ContactMe">
-        <form class="col-5">
-            <div class="form-group">
-                <label for="contact-name">* Name</label>
-                <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+        <div class="container inner-box " id="ContactMe">
+            <div class="card justify-content-center">
+                <h2 class="card-title">Email Me</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="contact-name">* Name</label>
+                        <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-org">Organization/Company</label>
+                        <input type="text" class="form-control" id="contact-org" placeholder="Oraganization/Company">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">* Email</label>
+                        <input type="email" class="form-control" id="contact-email" placeholder="Your E-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">* Message</label>
+                        <textarea class="form-control" id="contact-message" rows="4"
+                            placeholder="Type your Message Here"></textarea>
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="contact-org">Organization/Company</label>
-                <input type="text" class="form-control" id="contact-org" placeholder="Oraganization/Company">
+            <div class="card col-4">
+                <img src="static/headshot_1.jpg">
+                <p>Email: cameron.deweerd@gmail.com</p>
+                <p>Phone: 905-730-9493</p>
+                <p><a href="www.linkedin.com/in/cameron-deweerd-2435306a/"><img src="static/linkedin_logo.png" height=50px></a>
+                <a href="github.com/CameronDeweerd"><img src="static/github_logo.png" height=50px></a></p>
             </div>
-            <div class="form-group">
-                <label for="contact-email">* Email</label>
-                <input type="email" class="form-control" id="contact-email" placeholder="Your E-mail">
-            </div>
-            <div class="form-group">
-                <label for="contact-message">* Message</label>
-                <textarea class="form-control" id="contact-message" rows="4"
-                    placeholder="Type your Message Here"></textarea>
-            </div>
-            <button type="submit" class="button">Submit</button>
-        </form>
-
-        <div class="col-5">
-            <img src="static/headshot_1.jpg" width="100%">
-            <p>Email: cameron.deweerd@gmail.com</p>
-            <p>Phone: 905-730-9493</p>
-            <p><a href="www.linkedin.com/in/cameron-deweerd-2435306a/">LinkedIn</a> </p>
-            <p><a href="github.com/CameronDeweerd">GitHub</a></p>
         </div>
-
+    </section>
     </div>
-
 {% endblock %}
