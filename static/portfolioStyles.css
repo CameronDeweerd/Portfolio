@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 
 :root {
     /* To use these type var(--color-1) */
-    --color-1: #555B58;
+    --color-1: #222222;
     --color-2: #DFBCA0;
     --color-3: #88A3B0;
     --color-4: #A3B8BF;
@@ -96,6 +96,10 @@ p {
     text-align: center;
 }
 
+a {
+    color:var(--color-7);
+    text-decoration: underline;
+}
 
 .card {
     flex: 1 0 200px;
@@ -103,7 +107,7 @@ p {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     background-color: var(--color-3);
-    color: var(--color-7);
+    color: var(--color-1);
     text-align: center;
     padding: 0.4rem
   }
@@ -128,25 +132,35 @@ p {
       padding: 0.5rem;
   }
 
+
+
   .card-title {
-      text-transform: uppercase;
+
       text-align: center;
-      font-size: 1em;
+      font-size: 1.2em;
       margin: 0 0;
       text-decoration: underline;
       font-weight: bold;
   }
 
-  .card-text {
-      margin: 1em 0;
-      font-size: 0.8em;
+  h5.card-title {
+      text-transform: uppercase;
   }
 
+  .card-text {
+      margin: 1em 0;
+      font-size: 1em;
+  }
+
+    card-list-title {
+      font-size: 1.2em;
+      margin: 0 0;
+}
     .card-list {
       margin: 0 0;
       list-style-type: none;
       padding: 0;
-      font-size: 0.8em;
+      font-size: 1em;
   }
 
   button{
