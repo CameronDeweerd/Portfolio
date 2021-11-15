@@ -171,23 +171,23 @@
         <div class="container inner-box " id="ContactMe">
             <div class="card justify-content-center">
                 <h2 class="card-title">Email Me</h2>
-                <form>
+                <form id='contactForm' action="/contactForm" method="POST">
                     <div class="form-group">
                         <label for="contact-name">* Name</label>
-                        <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+                        <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
                         <label for="contact-org">Organization/Company</label>
-                        <input type="text" class="form-control" id="contact-org" placeholder="Oraganization/Company">
+                        <input type="text" class="form-control" id="contact-org" name="contact-org" placeholder="Oraganization/Company">
                     </div>
                     <div class="form-group">
                         <label for="contact-email">* Email</label>
-                        <input type="email" class="form-control" id="contact-email" placeholder="Your E-mail">
+                        <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Your E-mail" required>
                     </div>
                     <div class="form-group">
                         <label for="contact-message">* Message</label>
-                        <textarea class="form-control" id="contact-message" rows="4"
-                            placeholder="Type your Message Here"></textarea>
+                        <textarea class="form-control" id="contact-message" name="contact-message" rows="4"
+                            placeholder="Type your Message Here" required></textarea>
                     </div>
                     <button type="submit" class="button">Submit</button>
                 </form>
