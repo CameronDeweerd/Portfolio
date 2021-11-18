@@ -16,7 +16,11 @@
             integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <!-- StyleSheet -->
         <link rel="stylesheet" href="{{ url_for('portfolio.static', filename='portfolioStyles.css') }}">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
         <title>Cameron Deweerd: {% block title %}{% endblock %}</title>
 
     </head>
@@ -27,7 +31,7 @@
     <nav id="mainNavbar" class="navbar navbar-custom navbar-expand-md fixed-top">
         <a href="/" class="navbar-brand">Cameron Deweerd</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navbar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><img src="static/hamburger.png" height=30px></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navLinks">
             <ul class="navbar-nav">

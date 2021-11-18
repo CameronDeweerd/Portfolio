@@ -7,29 +7,31 @@
 
 {% block main %}
     <div class="transbox">
-    <h1>Cameron Deweerd</h1>
+    <h1>About Me</h1>
     <section class="section">
         <div class="container" id="aboutMe">
-                <div class="card" style="text-align:justify;">
-                    <h2 class="card-title">About Me</h2>
-                    <div>
+                <div class="card container" style="text-align:justify;">
+<!--                    <h2 class="card-title">About Me</h2>-->
+                        <div>
                         <p class="about-text">My name is Cameron, and I’m a chemical engineer based in Kitchener Ontario looking to transition into Software Engineering.</p>
                         <p class="about-text">I've worked in a few different automotive manufacturing environments where I discovered
                             that my favourite projects were those where I solved problems using code.  </p>
+                        </div>
+                        <div>
                         <p class="about-text">I've got a love for data and optimization and enjoy the feeling
                             of accomplishment when finding and fixing that bug in your code.  </p>
                         <p class="about-text">My current focus has been on Full Stack web development though I am also interested in data anlytics and testing.   </p>
-                    </div>
+                        </div>
                 </div>
-                <div class="card col-3">
-                    <img src="static/headshot_1.jpg">
+                <div class="card container col-3 headshot aboutHead">
+                    <img src="static/headshot_1.jpg" width="100%">
                 </div>
         </div>
     </section>
 
     <section class="section inner-box" id="projects">
         <h1>Projects</h1>
-        <div class="container reverse projects">
+        <div class="container projects" style="flex-direction:column">
             <div class="card projects">
                 <div class="card-body">
                     <h5 class="card-title">Barbell Optimizer</h5>
@@ -96,7 +98,6 @@
                                 <li class="card-list">Flask(Python) Backend Development</li>
                                 <li class="card-list">SQL database create/read/update</li>
                                 <li class="card-list">Git commit/push/merge </li>
-                                <li class="card-list">Using code for practical solutions</li>
                             </ul>
                             <form style="display: inline-block;" action="/issue"><button href="/issue" class="card-link">Try it out</button></form>
                             <form style="display: inline-block;" action="https://github.com/CameronDeweerd/IssueTracker" ><button class="card-link">View Code</button></form>
@@ -192,8 +193,8 @@
                     <button type="submit" class="button">Submit</button>
                 </form>
             </div>
-            <div class="card col-4">
-                <img src="static/headshot_1.jpg">
+            <div class="card headshot">
+                <img src="static/headshot_1.jpg" width="100%">
                 <p>Email: cameron.deweerd@gmail.com</p>
                 <p>Phone: 905-730-9493</p>
                 <p><a href="www.linkedin.com/in/cameron-deweerd-2435306a/"><img src="static/linkedin_logo.png" height=50px></a>
